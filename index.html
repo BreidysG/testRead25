@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 25</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Mi vecino Mack Pato
+                <br><br>
+                Era de rostro cobrizo y manos pequeñas, con uñas ovaladas. Desde niño su único afán era jugar y pensar en comprar y vender. Cuando conoció el dinero ¡cómo ardía la palma de sus manos, negándose a deshacerse de él! La única habilidad que mostró siempre fue convencer a como dé lugar, que le compraran cualquier baratija; guardando celosamente sus ahorros en su alcancía "chanchito".
+                <br><br>
+                Un día, apareció con un centenar de cajas "atún compás", diciendo a sus padres: "Esto es el fruto de mis ahorros". A partir de aquel instante se convirtió en distribuidor de productos de pan, actividad a la que dedicaba todo el tiempo, olvidándose de comer sus alimentos y aun de dormir a sus horas. ¡Qué le importaba! Una sed abrasadora por poseer más y más dinero devoraba su alma. Convirtiéndose en un avaro; y como desconfiaba de todo el mundo, su gran tesoro guardaba bajo cuatro llaves.
+                <br><br>
+                Pronto le calificaron como: ladrón por utilizar balanza adulterada; mentiroso por falsear precios según su conveniencia y usurero inconsciente, por cobrar altos intereses. De esta manera atesoró tanto dinero, amplió sus negocios, surgiendo cadenas de tiendas en diversas ciudades. Pero también se dio cuenta de que su vida corría peligro, y aunque le dolía en su alma, tuvo que pagar por su personal de seguridad.
+                <br><br>
+                Una mañana de invierno, estando en sus quehaceres, ingresó al súper market un hombre de aspecto sencillo, y con voz contundente le dijo: "¡Señor! La vida nadie la tiene comprada y es triste morirse, sin arrepentirse de sus pecados ante Cristo Jesús. Él perdonará sus maldades, porque murió por usted en la cruz. Para librarlo de la esclavitud de amar al dinero, y hallar la paz en él…".
+                <br><br>
+                "Mack Pato", como era conocido por todos -fuera de sí- contestó: "¡Fuera! Yo no necesito de nadie. ¡Con mi dinero hago lo que quiero!".
+                <br><br>
+                Pasado cierto tiempo. Una noche, mientras recontaba los billetes ganados una y otra vez, escuchó una voz audible en su oído: "¡Necio. Esta noche vas a morir!".
+                <br><br>
+                Pensó tratarse de una ilusión falsa. A media noche, sintió calentar su sangre por todo su cuerpo; horror y desesperación se apoderaron de su ser. ¿Qué hacer? Apenas llamó por el celular a su médico. Cuando otra vez la voz sentenció: "¿Ahora de quién serán tus riquezas? Y por cuanto eres incrédulo, tu destino te espera".
+                <br><br>
+                "¿Qué destino?", atinó a preguntar el moribundo avaro.
+                <br><br>
+                "El infierno, reservado para los irreverentes y rebeldes como tú que se niegan a humillarse ante el omnipotente, creador de todas las cosas".
+                <br><br>
+            </p>
+            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
